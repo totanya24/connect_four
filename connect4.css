@@ -1,35 +1,99 @@
-/* game board table */
+
+body {
+  background-color: darkkhaki;
+  font-family: 'Special Elite', cursive;
+  color: honeydew;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  color: chocolate;
+  text-shadow: 2px 2px 2px black;
+}
+
+
+
+#game {
+  width: 400px;
+  margin: auto;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #board td {
-  width: 50px;
+  position: relative;
+  width: 60px;
   height: 50px;
-  border: solid 1px #666;
+  border: solid 1px gold;
+  background-color: lightyellow;
+  border-radius: 3px;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
-
 .piece {
-  /* TODO: make into circles */
-  margin: 5px;
-  width: 80%;
-  height: 80%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px #333333;
   border-radius: 50%;
 }
 
-/* TODO: make pieces red/blue,  depending on player 1/2 piece */
-.piece.p1 {
-  background-color: red;
-}
-.piece.p2{
- background-color: blue;
+
+
+
+#frame {
+  display: flex;
+  justify-content: space-between;
+  background-color: goldenrod;
+  font-family: 'Special Elite';
+  padding: 5px;
+  width: 390px;
+  margin: auto;
+  font-size: 1.25em;
+  box-shadow: 2px 2px 2px #333333;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-/* column-top is table row of clickable areas for each column */
 
-#column-top td {
-  border: dashed 1px lightgray;
+
+#p1-color{
+  padding: 5px;
+  margin: auto;
+  cursor: pointer;
+}
+#p2-color{
+  padding: 5px;
+  margin: auto;
+  cursor: pointer;
 }
 
-#column-top td:hover {
-  background-color: gold;
+
+
+button {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: honeydew;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 5px 0px 5px;
+  background-color: goldenrod;
+  border: 1px solid honeydew;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+
+
+
